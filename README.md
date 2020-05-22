@@ -29,5 +29,7 @@ Enum post_status {
 Ref: posts.user_id > users.id // many-to-one
 ```
 
+You can easily write it by hand or use a tool like https://dbdiagram.io/ to generate it
+
 The goal of this project is essentially to use this schema to generate [Entity Framework Core](https://github.com/dotnet/efcore) Types 
 From which an application can talk to any Database backend SQL Server, Postgres, Mysql e.t.c.
