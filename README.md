@@ -1,7 +1,7 @@
-# EntityFramework.DBML.TypeProvider
-F# Entity Framework Core Type Provider for DBML
+# EntityFramework.TypeProvider
+F# Entity Framework Core Type Provider
 
-[DBML](https://www.dbml.org/home/#intro) is a simple Database markup Language
+This type provider uses DBML to generate Entity Framework Types. [DBML](https://www.dbml.org/home/#intro) is a simple Database markup Language that looks something like what we have below
 
 ```dbml
 Table users {
@@ -30,3 +30,4 @@ Ref: posts.user_id > users.id // many-to-one
 ```
 
 The goal of this project is essentially to use this schema to generate [Entity Framework Core](https://github.com/dotnet/efcore) Types 
+From which an application can talk to any Database backend SQL Server, Postgres, Mysql e.t.c.
